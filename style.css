@@ -1,0 +1,34 @@
+div{
+    position: relative;
+}
+
+#car-1{
+    position: absolute;
+    transform: scaleX(-1);
+    animation: car1mov 2s ease-in;
+}
+
+#car-2{
+    position: absolute;
+    right: 0%;
+    width: max-content;
+    animation: car2mov 2s ease-in;
+}
+
+@keyframes car1mov{
+    from{
+        right: 92%;
+    }
+    to{
+        right: 57%;
+    }
+}
+
+@keyframes car2mov {
+    from{
+        right: 00%;
+    }
+    to{
+        right: 50%;
+    }
+}
